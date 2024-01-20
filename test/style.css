@@ -1,0 +1,113 @@
+body, h1, h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background: linear-gradient(302deg, rgba(107,34,195,1) 1%, rgba(253,187,45,1) 43%, rgba(45,253,251,1) 66%, rgba(253,45,136,1) 84%);	
+    background-size: 400% 400%;
+	animation: rotate 60s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    background: #332941;
+    color: #F8E559;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+a:hover {
+    -webkit-box-shadow: -2px 52px 85px 2px rgba(245,10,245,0.56);
+    -moz-box-shadow: -2px 52px 85px 2px rgba(245,10,245,0.56);
+    box-shadow: -2px 52px 85px 2px rgba(0, 0, 0, 0.56);
+}
+
+
+.header {
+    background-color: #332941;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    font-size: 20px;
+    font-family: "Lemon";
+    color: #F8E559;
+}
+
+.forma {
+    background-color: #F8E559;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 60px;
+    border-radius: 20px;
+}
+
+.select_text {
+    color: #332941;
+    font-family: "Lemon";
+    text-align: center;
+}
+
+@keyframes rotate {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+button {
+    border: 0;
+    background: rgb(107,34,195);
+    
+    background: linear-gradient(302deg, rgba(107,34,195,1) 1%, rgba(253,187,45,1) 43%, rgba(45,253,251,1) 66%, rgba(253,45,136,1) 84%);	
+    background-size: 400% 400%;
+	animation: rotate 15s ease infinite;
+    
+    color: #F8E559;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+button:hover {
+   
+    -webkit-box-shadow: -2px 52px 85px 2px rgba(245,10,245,0.56);
+    -moz-box-shadow: -2px 52px 85px 2px rgba(245,10,245,0.56);
+    box-shadow: -2px 52px 85px 2px rgba(0, 0, 0, 0.56);
+}
+
+.select {
+    border: 1px solid #332941;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background: transparent;
+
+}
+
+option {
+    background-color: #F8E559;
+    border: 1px solid #332941;
+    border-radius: 20px;
+}
+footer {
+    background-color: #332941;
+    padding: 20px 10px;
+    color: #F8E559;
+    text-align: center;
+    font-family: "Lemon";
+    font-size: 10px;
+}

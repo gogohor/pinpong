@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вікторина про природу</title>
+    <!-- Додайте ваші власні стилі тут -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .question img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <div class="question">
+        <img src="nature_question1.jpg" alt="Природа - Питання 1">
+        <h2>Яка ця рослина?</h2>
+        <p>Виберіть правильну відповідь:</p>
+        <ul>
+            <li><input type="radio" name="q1" value="a"> А) Ромашка</li>
+            <li><input type="radio" name="q1" value="b"> Б) Тюльпан</li>
+            <li><input type="radio" name="q1" value="c"> В) Соняшник</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <img src="nature_question2.jpg" alt="Природа - Питання 2">
+        <h2>Де було зроблено це фото?</h2>
+        <p>Виберіть правильну відповідь:</p>
+        <ul>
+            <li><input type="radio" name="q2" value="a"> А) Амазонський ліс</li>
+            <li><input type="radio" name="q2" value="b"> Б) Гімалаї</li>
+            <li><input type="radio" name="q2" value="c"> В) Ніагарський водоспад</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <img src="nature_question3.jpg" alt="Природа - Питання 3">
+        <h2>Який вид тварини представлений на зображенні?</h2>
+        <p>Виберіть правильну відповідь:</p>
+        <ul>
+            <li><input type="radio" name="q3" value="a"> А) Ведмідь</li>
+            <li><input type="radio" name="q3" value="b"> Б) Олень</li>
+            <li><input type="radio" name="q3" value="c"> В) Лев</li>
+        </ul>
+    </div>
+
+    <!-- Додайте аналогічні блоки для інших питань -->
+
+    <button onclick="submitQuiz()">Завершити вікторину</button>
+</div>
+
+<script>
+    function submitQuiz() {
+        // Ваш JavaScript-код для обробки результатів вікторини
+        // Наприклад, виведення результатів або переадресація користувача
+        alert('Вікторина завершена! Результати будуть тут.');
+    }
+</script>
+
+</body>
+</html>

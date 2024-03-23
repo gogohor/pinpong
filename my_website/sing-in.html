@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <main class="auth">
+        <form action="/auth/sign-in" method="post">
+            <div class="field">
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username">
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password">
+            </div>
+            {% if incorrect_password %}
+                <div>
+                    Не вірний пароль
+                </div>
+            {% endif %}
+            <button type="submit">
+                Login
+            </button>
+            <a href="/auth/sign-up">register now</a>
+        </form>
+    </main>
+    
+</body>
+</html>

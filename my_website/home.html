@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div>
+
+        </div>
+        <div>
+       <h1>News</h1> 
+    </div>
+    <div>
+        <a href="/auth/sign-in">Login</a>
+    </div>
+</header>
+    <main>
+        <section>
+            <h1>Sport</h1>
+            <div class="articles">
+                {% for new in news %}
+                <a class="article" href="/home/{{new['id']}}">
+                    <img src="https://t4.ftcdn.net/jpg/01/67/74/79/360_F_167747932_NE1da5cf9FM30QExtlFjbmk9ypItoJl2.jpg" alt="">
+                    <div class="content">
+                        <h2>{{new['title']}}</h2>
+                        <p>{{new['content']}}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+        <section>
+            <h1>Polytics</h1>
+        </section>
+    </main>
+</body>
+</html>

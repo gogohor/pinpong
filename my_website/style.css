@@ -1,0 +1,60 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0 20px;
+    height: 100px;
+    background: #7d5555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+}
+
+.articles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.article {
+    max-width: 300px;   
+    border-radius: 20px;
+    overflow: hidden;
+    background: #3e3e3e20;
+    text-decoration: dashed;
+    color: rgba(2,2,2, 0.2);
+}
+.content {
+    padding: 10px;
+}
+img {
+    width: 100%;
+}
+
+.auth {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}

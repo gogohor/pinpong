@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="block" style="position: absolute;">
+        <h1>{{showed_news}}</h1>
+        {% for i in ids %}
+        <a href="/home/{{i}}">news {{i}}</a>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
